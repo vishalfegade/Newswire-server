@@ -1,6 +1,18 @@
 const express = require('express'),
 	mongoose = require('mongoose');
+	
 const app = express();
+
+//* Client Request setup START
+const cors = require('cors')
+app.use(cors({
+    //For Development 👇
+     //origin: 'http://localhost:3000'
+
+    // For Production
+    origin: 'https://newswire-server-9nfd.onrender.com'
+}))
+//! End
 
 
 
