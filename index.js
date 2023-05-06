@@ -7,10 +7,10 @@ const app = express();
 const cors = require('cors')
 app.use(cors({
     //For Development 👇
-    // origin: 'http://localhost:3000'
+     origin: 'http://localhost:3000'
 
     // For Production
-    origin: 'https://newswire-client-9dvp.onrender.com'
+    //origin: 'https://newswire-client-9dvp.onrender.com'
 }))
 //! End
 
